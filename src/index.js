@@ -5,4 +5,10 @@ const someObj = {
   }
 }
 
+const anotherObj = {
+  ...someObj,
+  hello: true
+}
+
 console.log(someObj);
+console.log(anotherObj);
