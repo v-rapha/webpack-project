@@ -1,16 +1,4 @@
-import './styles/index.scss';
+import { render } from 'react-dom';
+import App from './components/App';
 
-const someObj = {
-  foo: 'bar',
-  bar() {
-    return null;
-  }
-}
-
-const anotherObj = {
-  ...someObj,
-  hello: true
-}
-
-console.log(someObj);
-console.log(anotherObj);
+render(<App />, document.getElementById('root'));
